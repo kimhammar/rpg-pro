@@ -1,0 +1,5 @@
+http/RestResponse.class
+entities/Creature.class
+ejb/CharacterEJB.class
+http/RestHttp.class
+http/Activator.class

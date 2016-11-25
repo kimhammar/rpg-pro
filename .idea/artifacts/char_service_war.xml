@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="char-service:war">
+    <output-path>$PROJECT_DIR$/char-service/target</output-path>
+    <root id="archive" name="rpgpro.war">
+      <element id="artifact" artifact-name="char-service:war exploded" />
+    </root>
+  </artifact>
+</component>
