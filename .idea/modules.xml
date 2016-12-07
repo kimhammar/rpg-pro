@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/char-service/char-service.iml" filepath="$PROJECT_DIR$/char-service/char-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/game-serv/game-serv.iml" filepath="$PROJECT_DIR$/game-serv/game-serv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/game-service/game-service.iml" filepath="$PROJECT_DIR$/game-service/game-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpg-pro.iml" filepath="$PROJECT_DIR$/rpg-pro.iml" />
     </modules>
   </component>

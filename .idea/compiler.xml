@@ -23,11 +23,15 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="char-service" />
+        <module name="game-serv" />
+        <module name="game-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="char-ser" target="1.5" />
       <module name="char-service" target="1.8" />
+      <module name="game-serv" target="1.8" />
+      <module name="game-service" target="1.8" />
       <module name="rpg-pro" target="1.5" />
     </bytecodeTargetLevel>
   </component>
