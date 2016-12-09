@@ -25,7 +25,7 @@
 //    }
 //
 //
-//    public void createNewMap() {
+//    public void startNewGame() {
 //        map = new Creature[height][width];
 //    }
 //

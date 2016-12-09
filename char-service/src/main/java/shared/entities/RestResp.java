@@ -1,18 +1,21 @@
 package shared.entities;
 
+import javax.enterprise.context.RequestScoped;
 import java.io.Serializable;
+import java.util.Map;
 import java.util.UUID;
 
 /**
  * Created by kimha on 11/25/16.
  */
 
-public class RestResponse<T> implements Serializable{
+@RequestScoped
+public class RestResp{
     private int status;
-    private T data;
+    private Map<String,Object> data;
     private String transactionId;
 
-    public RestResponse() {
+    public RestResp() {
     }
 
     public int getStatus() {
@@ -23,11 +26,11 @@ public class RestResponse<T> implements Serializable{
         this.status = status;
     }
 
-    public T getData() {
+    public Map<String,Object> getData() {
         return data;
     }
 
-    public void setData(T data) {
+    public void setData(Map<String,Object> data) {
         this.data = data;
     }
 

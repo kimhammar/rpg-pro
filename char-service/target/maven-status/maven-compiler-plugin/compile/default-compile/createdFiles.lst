@@ -6,9 +6,12 @@ gameService/ejb/GameHelper.class
 shared/constants/Cst.class
 gameService/ejb/GameSession.class
 gameService/ejb/GameEJB.class
+gameService/exceptions/MapOutOfBoundsExeption.class
 shared/entities/Creature.class
+shared/entities/RestResp.class
 shared/exceptions/FailedToJoinGameException.class
 creatureService/http/RestHttp.class
 creatureService/http/Activator.class
+gameService/entities/GameStats.class
 shared/entities/CreatureMoveResponse.class
 gameService/entities/CreatureMove.class

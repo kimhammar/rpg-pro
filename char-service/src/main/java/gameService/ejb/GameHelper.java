@@ -1,5 +1,6 @@
 package gameService.ejb;
 
+import gameService.exceptions.MapOutOfBoundsExeption;
 import shared.ejb.CharacterDbEjb;
 import shared.entities.Creature;
 import shared.exceptions.FailedToJoinGameException;
@@ -32,12 +33,13 @@ public class GameHelper {
     @Inject
     GameSession gameSession;
 
+
     public RestResponse<String> joinGame(@Context SecurityContext sc, int id) throws FailedToJoinGameException {
 
         //Check player didn't load any character
         if (gameSession.getCurrentCreature() == null) {
-            LOGGER.info("Character loading...");
             creature = characterDbEjb.getCreature(id);
+            LOGGER.info(String.format("Creature [%s] for player[%s] loaded" , creature.getName(), creature.getOwner()));
             //Check player owns requeted creature
 
             gameSession.setCurrentCreature(creature);
@@ -55,19 +57,55 @@ public class GameHelper {
 
 
         //Check character isn't ingame
-        if (creature.isInGame() == false) {
-            creature.setInGame(true);
+        if (creature.isAlive() == false) {
+            creature.setAlive(true);
 //            characterDbEjb.updateCreature(creature);
             gameEJB.addCreature(creature);
-            LOGGER.info("Character joined game");
+            LOGGER.info(String.format("Creature [%s] joined game", creature.getName()));
         } else {
-            LOGGER.warn("Character already in use!");
+            LOGGER.warn(String.format("Creature [%s] already in use!",creature.getName()));
         }
 
 
         RestResponse<String> restResponse = new RestResponse<>();
         restResponse.setStatus(200);
         restResponse.setData(creature.toString());
+        return restResponse;
+    }
+
+
+
+    public RestResponse<GameSession> requestMove(String direction){
+        RestResponse<GameSession> restResponse = new RestResponse<>();
+        if(gameSession.getCurrentCreature() == null){
+            restResponse.setStatus(420);
+            return restResponse;
+        }
+        creature = gameSession.getCurrentCreature();
+        switch (direction) {
+            case "N":
+            case "S":
+            case "E":
+            case "W":
+                try {
+                    LOGGER.info(String.format("Trying move creature [%s]", creature.getName()));
+                    String msg = gameEJB.move(creature, direction);
+                    gameSession.setLastActionMessage(msg);
+                } catch (MapOutOfBoundsExeption mapOutOfBoundsExeption) {
+                    restResponse.setStatus(420);
+                    gameSession.setLastActionMessage(mapOutOfBoundsExeption.getMessage());
+                    //Log invalid move player and stacktrace
+                    LOGGER.warn("Map out of bounds");
+                }
+                //If everything ok
+                restResponse.setStatus(200);
+                break;
+            default:
+                //In case of invalid request
+                restResponse.setStatus(400);
+                break;
+        }
+        restResponse.setData(gameSession);
         return restResponse;
     }
 

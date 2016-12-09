@@ -1,9 +1,5 @@
 package shared.entities;
 
-import javax.ejb.Stateful;
-import javax.enterprise.context.RequestScoped;
-import javax.enterprise.context.SessionScoped;
-import javax.inject.Named;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -30,14 +26,14 @@ public class Creature implements Serializable{
     private Integer xPos;
     private Integer yPos;
 
-    private boolean inGame;
+    private boolean alive;
 
-    public boolean isInGame() {
-        return inGame;
+    public boolean isAlive() {
+        return alive;
     }
 
-    public void setInGame(boolean inGame) {
-        this.inGame = inGame;
+    public void setAlive(boolean inGame) {
+        this.alive = inGame;
     }
 
     public Creature() {
@@ -92,7 +88,7 @@ public class Creature implements Serializable{
                 ", owner='" + owner + '\'' +
                 ", xPos=" + xPos +
                 ", yPos=" + yPos +
-                ", inGame=" + inGame +
+                ", isAlive=" + alive +
                 '}';
     }
 }

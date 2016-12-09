@@ -1,9 +1,12 @@
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/shared/ejb/CharacterDbEjb.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/shared/constants/Direction.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/gameService/ejb/GameEJB.java
+/home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/shared/entities/RestResp.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/shared/entities/CreatureMoveResponse.java
+/home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/gameService/entities/GameStats.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/shared/entities/Creature.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/creatureService/http/RestHttp.java
+/home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/gameService/exceptions/MapOutOfBoundsExeption.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/gameService/http/InGameHttp.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/gameService/ejb/GameSession.java
 /home/kimha/Studies/BigProject/rpg-pro/rpg-pro/char-service/src/main/java/shared/entities/RestResponse.java

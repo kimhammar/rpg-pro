@@ -1,6 +1,7 @@
 package shared.ejb;
 
 import shared.entities.Creature;
+import shared.entities.RestResp;
 import shared.entities.RestResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,9 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by kimha on 11/24/16.
@@ -32,17 +35,35 @@ public class CharacterDbEjb {
     @PersistenceContext(unitName = "rpgchar")
     private EntityManager em;
 
+    @Inject
+    RestResp resp;
+
 
     //Method used for retrieving creatures owned by the user
-    public RestResponse getCreatures(String userName) {
-        RestResponse<List<Creature>> restResponse = new RestResponse<>();
+//    public RestResponse getCreatures(String userName) {
+//        RestResponse<List<Creature>> restResponse = new RestResponse<>();
+//
+//        LOGGER.info(String.format("Reading creatures for player [%s] from database", userName));
+//
+//        //TODO: make this a proper query instead of hard coded
+//        Query q = em.createQuery(String.format("SELECT c FROM Creature c WHERE c.owner LIKE \'%s\'", userName));
+//        List<Creature> resultList = q.getResultList();
+//        restResponse.setStatus(200);
+//        restResponse.setData(resultList);
+//        return restResponse;
+//    }
+
+    public void getCreatures(String userName) {
+
+        LOGGER.info(String.format("Reading creatures for player [%s] from database", userName));
 
         //TODO: make this a proper query instead of hard coded
         Query q = em.createQuery(String.format("SELECT c FROM Creature c WHERE c.owner LIKE \'%s\'", userName));
         List<Creature> resultList = q.getResultList();
-        restResponse.setStatus(200);
-        restResponse.setData(resultList);
-        return restResponse;
+        resp.setStatus(200);
+        Map<String,Object> creatures = new HashMap<>();
+        creatures.put("creatures",resultList);
+        resp.setData(creatures);
     }
 
     //Method used for retrieving creatures owned by the user
@@ -66,14 +87,12 @@ public class CharacterDbEjb {
 
     //Method used for storing a new creature for the user
     public RestResponse storeCreature(String user, String creatureName) {
-        LOGGER.info("Trying to save creature for " + user);
 
         //TODO: return created object
         RestResponse<String> restResponse = new RestResponse<>();
-        String error = "fields cannot be null";
         try {
             if (creatureName == null) {
-                throw new NullPointerException(error);
+                throw new NullPointerException("fields cannot be null");
             }
             Creature creature = new Creature();
             creature.setName(creatureName);
@@ -81,11 +100,12 @@ public class CharacterDbEjb {
             em.persist(creature);
             restResponse.setStatus(201);
             restResponse.setData("persisted");
-            LOGGER.info("Creature persisted for user " + user);
+            LOGGER.info(String.format("Creature persisted for player [%s]", user));
+
         } catch (Exception e) {
             restResponse.setStatus(400);
-            restResponse.setData("failed to persist creature." + error);
-            LOGGER.warn("Failed to persist creature for user" + e.getStackTrace());
+            restResponse.setData("failed to persist creature." + e.getMessage());
+            LOGGER.error(String.format("Failed to persist creature for player [%s] \n ERROR: %s", e.getMessage()));
         }
         return restResponse;
     }

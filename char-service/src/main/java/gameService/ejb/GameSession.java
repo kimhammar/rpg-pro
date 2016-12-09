@@ -11,6 +11,12 @@ import java.io.Serializable;
  */
 @SessionScoped
 public class GameSession implements Serializable{
+
+
+
+
+
+
     private Creature currentCreature;
 
     public Creature getCurrentCreature() {
@@ -22,6 +28,15 @@ public class GameSession implements Serializable{
     }
 
     public GameSession() {
+    }
 
+    private String lastActionMessage;
+
+    public String getLastActionMessage() {
+        return lastActionMessage;
+    }
+
+    public void setLastActionMessage(String lastActionMessage) {
+        this.lastActionMessage = lastActionMessage;
     }
 }

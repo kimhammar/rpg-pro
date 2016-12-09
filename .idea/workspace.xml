@@ -2,68 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6df8f0c1-2f0c-4f19-ab02-551e4622cfca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/Activator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/CreatureMove.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/constants/Cst.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/constants/Direction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/CreatureMoveResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/exceptions/FailedToJoinGameException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/game-serv.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/ejb/GameEJB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/Creature.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/CreaturePosition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/Game.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/Killable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/MapBit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/TreasureMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/http/MoveRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/http/MoveResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-serv/src/main/java/http/RestHttp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-service/game-service.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-service/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-service/src/main/java/ejb/ManagerEJB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-service/src/main/java/http/Activator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-service/src/main/java/http/GameHttp.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/classes/ejb/CharacterEJB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/classes/entities/Creature.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/classes/http/Activator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/classes/http/RestHttp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/classes/http/RestResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/classes/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/classes/ejb/CharacterEJB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/classes/entities/Creature.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/classes/http/Activator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/classes/http/RestHttp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/classes/http/RestResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/index.xhtml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/ejb/CharacterEJB.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/entities/Creature.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/http/Activator.java" afterPath="$PROJECT_DIR$/game-serv/src/main/java/http/Activator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/http/RestHttp.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/http/RestResponse.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameStats.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/MapOutOfBoundsExeption.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/resources/logback-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/resources/logback.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/rpgpro.war" afterPath="$PROJECT_DIR$/char-service/target/rpgpro.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/char_service_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/char_service_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/char-service.iml" afterPath="$PROJECT_DIR$/char-service/char-service.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/pom.xml" afterPath="$PROJECT_DIR$/char-service/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-serv/game-serv.iml" afterPath="$PROJECT_DIR$/game-serv/game-serv.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-serv/src/main/java/ejb/GameEJB.java" afterPath="$PROJECT_DIR$/game-serv/src/main/java/ejb/GameEJB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-service/game-service.iml" afterPath="$PROJECT_DIR$/game-service/game-service.iml" />
     </list>
     <ignored path="rpg-pro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,13 +50,78 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="RestHttp.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java">
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="GameSession.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="225">
-                    <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="40" />
+                  <state relative-caret-position="570">
+                    <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="e#628#629#0" expanded="true" />
+                      <element signature="e#668#669#0" expanded="true" />
+                      <element signature="e#734#735#0" expanded="true" />
+                      <element signature="e#792#793#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="CharacterDbEjb.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="482">
+                    <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
                     <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="InGameHttp.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="697">
+                    <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="180">
+                    <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="GameHelper.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="487">
+                    <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="GameEJB.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-1448">
+                    <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+                    <folding>
+                      <element signature="e#4777#4778#0" expanded="true" />
+                      <element signature="e#4841#4842#0" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -110,14 +137,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java">
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/char-service/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,29 +151,55 @@
         <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharacterDbEjb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java">
+      <file leaf-file-name="RestHttp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InGameHttp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+            <state relative-caret-position="525">
+              <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestResp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameStats.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameStats.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,11 +208,9 @@
       <file leaf-file-name="CreatureMove.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/entities/CreatureMove.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="255">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,55 +219,7 @@
         <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/CreatureMoveResponse.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameHelper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEJB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/http/Activator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -248,16 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game-service/src/main/java/entities/MapBit.java" />
-        <option value="$PROJECT_DIR$/game-service/src/main/java/entities/TreasureMap.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/interceptors/LoggingInterceptor.java" />
-        <option value="$PROJECT_DIR$/char-service/pom.xml" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/constants/Cst.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/ejb/CharacterEJB.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/http/RestResponse.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/interceptors/Logged.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/interceptors/RestHttpInterceptor.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/beans.xml" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/interceptors/LogInterceptor.java" />
         <option value="$PROJECT_DIR$/game-serv/pom.xml" />
         <option value="$PROJECT_DIR$/game-serv/src/main/java/Entities/Killable.java" />
@@ -290,15 +281,25 @@
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/CreatureMove.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/http/Activator.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/Activator.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/PlayerEJB.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/managedBeans/playerBean.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/managedBeans/PlayerBean.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/MapOutOfBoundsExeption.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" />
+        <option value="$PROJECT_DIR$/char-service/logback.xml" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/logback.xml" />
+        <option value="$PROJECT_DIR$/char-service/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/char-service/src/main/resources/logback-test.xml" />
+        <option value="$PROJECT_DIR$/char-service/pom.xml" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameStats.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResp.java" />
       </list>
     </option>
   </component>
@@ -321,8 +322,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1914" />
-    <option name="height" value="1051" />
+    <option name="x" value="-1" />
+    <option name="width" value="1922" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -368,11 +370,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -452,6 +451,44 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg-pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpg-pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="char-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -509,11 +546,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gameService" />
+              <option name="myItemId" value="creatureService" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ejb" />
+              <option name="myItemId" value="http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -549,6 +586,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,16 +597,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/char-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/char-service/src/main/resources/WEB-INF" />
-      <recent name="$PROJECT_DIR$/char-service/src/main/webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="gameService.exceptions" />
+      <recent name="exceptions" />
+      <recent name="entities" />
+      <recent name="http" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/char-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/char-ser/src/main/webapp" />
     </key>
@@ -574,10 +615,12 @@
       <recent name="http" />
       <recent name="entities" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="exceptions" />
-      <recent name="entities" />
-      <recent name="http" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/char-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/char-service/src/main/java" />
+      <recent name="$PROJECT_DIR$/char-service/src/main/resources/WEB-INF" />
+      <recent name="$PROJECT_DIR$/char-service/src/main/webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Application.GameEJB">
@@ -1041,40 +1084,50 @@
       <workItem from="1480611422048" duration="3575000" />
       <workItem from="1480718515251" duration="15525000" />
       <workItem from="1480971332757" duration="9651000" />
-      <workItem from="1481075779710" duration="4128000" />
+      <workItem from="1481075779710" duration="4193000" />
+      <workItem from="1481231574239" duration="24981000" />
     </task>
+    <task id="LOCAL-00001" summary="updated structure and added game-service">
+      <created>1481079939017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481079939017</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79572000" />
+    <option name="totallyTimeSpent" value="104618000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1914" height="1051" extended-state="0" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19153439" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39918533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19153439" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2718941" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22875132" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27168235" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20920502" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39918533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50574714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1083,7 +1136,6 @@
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3329939" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5057712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1097,6 +1149,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated structure and added game-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated structure and added game-service" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -1108,39 +1164,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/index.xhtml" />
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/rest/Response.java" />
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1167,9 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,13 +1200,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/interceptors/LoggingInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="20" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/interceptors/LoggingInterceptor.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/UUID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -1210,13 +1224,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/interceptors/LogInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/interceptors/LogInterceptor.java" />
     <entry file="file://$PROJECT_DIR$/game-serv/src/main/java/http/Activator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1228,6 +1236,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,21 +1264,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/interceptors/Logged.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/interceptors/Logged.java" />
     <entry file="file://$PROJECT_DIR$/game-serv/src/main/java/ejb/GameEJB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1310,7 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,14 +1319,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/CreaturePosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/CreaturePosition.java" />
     <entry file="file://$PROJECT_DIR$/game-serv/src/main/java/entities/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1367,46 +1354,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/ejb/CreatureEjb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/ejb/PlayerEJB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/CharStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/GameSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/GameStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/ejb/CreatureEjb.java" />
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/ejb/PlayerEJB.java" />
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/CharStatus.java" />
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/GameSession.java" />
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/entities/GameStatus.java" />
     <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/constants/Cst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1415,10 +1367,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java">
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/managedBeans/PlayerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/MapOutOfBoundsExeption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/resources/logback-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1431,18 +1410,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/CreatureMoveResponse.java">
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="570">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/entities/CreatureMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1448">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#4777#4778#0" expanded="true" />
+            <element signature="e#4841#4842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1452,65 +1506,41 @@
     <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/entities/CreatureMove.java">
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/CreatureMoveResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java">
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
+        <state relative-caret-position="525">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
