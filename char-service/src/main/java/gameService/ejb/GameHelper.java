@@ -54,7 +54,7 @@ public class GameHelper {
 
 
         //Check character isn't ingame
-        if (creature.isInGame() == false) {
+        if (!creature.isInGame()) {
             creature.setInGame(true);
             //update in database
             characterDbEjb.updateCreature(creature);
@@ -67,7 +67,7 @@ public class GameHelper {
         }
 
         //Add information
-        responseHelper.putItem("msg", String.format("Your character has entered the arena! Make a move!", creature.getName()));
+        responseHelper.putItem("msg", String.format("Your character [%s] has entered the arena! Make a move!", creature.getName()));
         responseHelper.putItem("position", String.format("[X:%d, Y:%d]", creature.getxPos(), creature.getyPos()));
     }
 
@@ -76,15 +76,15 @@ public class GameHelper {
     public void requestMove(String direction) throws MapOutOfBoundsExeption {
         if (gameSession.getCurrentCreature() == null) {
             responseHelper.putItem("msg", "you must chose a creature");
-            LOGGER.info(String.format("Creature not chosen yet"));
+            LOGGER.info("Creature not chosen yet");
             responseHelper.setStatus(420);
             return;
         }
 
         creature = gameSession.getCurrentCreature();
-        if(creature.isInGame() == false){
+        if (!creature.isInGame()) {
             responseHelper.putItem("msg", "You have been killed :( time to join agian!");
-            LOGGER.info(String.format("Slayed creature [%s] tried to join",creature.getName()));
+            LOGGER.info(String.format("Slayed creature [%s] tried to join", creature.getName()));
             responseHelper.setStatus(420);
             return;
         }
@@ -95,10 +95,8 @@ public class GameHelper {
             case "S":
             case "E":
             case "W":
-                    LOGGER.info(String.format("Trying move creature [%s]", creature.getName()));
-                    game.move(creature, direction);
-                    //Probably should put this catch closer to surface
-
+                LOGGER.info(String.format("Trying move creature [%s]", creature.getName()));
+                game.move(creature, direction);
                 break;
             default:
                 //In case of invalid request
@@ -110,7 +108,7 @@ public class GameHelper {
         //Check if player still in game, else make available for play
         //TODO: put this at better place
         if (!creature.isInGame()) {
-            LOGGER.info(String.format("Updating [inGame] for creature [%s]",creature.getName()));
+            LOGGER.info(String.format("Updating [inGame] for creature [%s]", creature.getName()));
             characterDbEjb.updateCreature(creature);
         }
     }

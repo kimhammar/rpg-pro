@@ -1,112 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6df8f0c1-2f0c-4f19-ab02-551e4622cfca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_1_2_9_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_config_arquillian_config_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_config_arquillian_config_impl_base_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_impl_base_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_spi_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_test_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_test_impl_base_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_test_spi_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_core_arquillian_core_api_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_core_arquillian_core_impl_base_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_core_arquillian_core_spi_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_junit_arquillian_junit_container_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_junit_arquillian_junit_core_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_protocol_arquillian_protocol_jmx_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_protocol_arquillian_protocol_servlet_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_test_arquillian_test_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_test_arquillian_test_impl_base_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_test_arquillian_test_spi_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_testenricher_arquillian_testenricher_cdi_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_testenricher_arquillian_testenricher_ejb_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_testenricher_arquillian_testenricher_initialcontext_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_arquillian_testenricher_arquillian_testenricher_resource_1_1_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_invocation_jboss_invocation_1_4_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_2_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_common_core_2_5_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_dmr_1_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_vfs_3_2_9_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_2_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logmanager_jboss_logmanager_2_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_1_4_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_river_1_4_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_modules_jboss_modules_1_4_3_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_msc_jboss_msc_1_2_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_remoting_jboss_remoting_4_0_9_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_remotingjmx_remoting_jmx_2_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_sasl_jboss_sasl_1_0_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_shrinkwrap_descriptors_shrinkwrap_descriptors_api_base_2_0_0_alpha_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_shrinkwrap_descriptors_shrinkwrap_descriptors_impl_base_2_0_0_alpha_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_shrinkwrap_descriptors_shrinkwrap_descriptors_spi_2_0_0_alpha_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_shrinkwrap_shrinkwrap_api_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_shrinkwrap_shrinkwrap_impl_base_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_shrinkwrap_shrinkwrap_spi_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_staxmapper_1_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_stdio_jboss_stdio_1_0_2_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_threads_jboss_threads_2_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_3_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_3_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_picketbox_picketbox_4_9_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_arquillian_wildfly_arquillian_common_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_arquillian_wildfly_arquillian_container_remote_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_arquillian_wildfly_arquillian_protocol_jmx_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_arquillian_wildfly_arquillian_testenricher_msc_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_controller_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_controller_client_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_core_security_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_core_security_api_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_deployment_repository_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_domain_http_interface_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_domain_management_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_io_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_jmx_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_network_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_platform_mbean_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_process_controller_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_protocol_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_remoting_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_self_contained_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_server_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_core_wildfly_version_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_security_wildfly_security_manager_1_1_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/ejb/CharacterDbEjb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/exeption/NoCreatureWithSuchIdException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameDbEjb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/char-service/src/test/java/CreatureTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/CreatureMove.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/constants/Direction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/CreatureMoveResponse.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameEJB.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/Game.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameStats.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameResults.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/Creature.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResp.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/response/ResponseHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/entities/RestResponse.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/shared/response/RestResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/char-service/src/main/java/shared/exceptions/FailedToJoinGameException.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/FailedToJoinGameException.java" />
+    <list default="true" id="6df8f0c1-2f0c-4f19-ab02-551e4622cfca" name="Default" comment="playable game :)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/rpgpro.war" afterPath="$PROJECT_DIR$/char-service/target/rpgpro.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/char-service.iml" afterPath="$PROJECT_DIR$/char-service/char-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/pom.xml" afterPath="$PROJECT_DIR$/char-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/MapOutOfBoundsExeption.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/MapOutOfBoundsExeption.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" afterPath="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/char-service/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/char-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/char-service/target/rpgpro/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-serv/src/main/java/ejb/GameEJB.java" afterPath="$PROJECT_DIR$/game-serv/src/main/java/ejb/GameEJB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-serv/src/main/java/entities/Game.java" afterPath="$PROJECT_DIR$/game-serv/src/main/java/entities/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-serv/src/main/java/http/RestHttp.java" afterPath="$PROJECT_DIR$/game-serv/src/main/java/http/RestHttp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-service/src/main/java/http/GameHttp.java" afterPath="$PROJECT_DIR$/game-service/src/main/java/http/GameHttp.java" />
     </list>
     <ignored path="rpg-pro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,7 +30,7 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <splitter split-orientation="horizontal" split-proportion="0.434375">
+          <splitter split-orientation="horizontal" split-proportion="0.5630208">
             <split-first>
               <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                 <file leaf-file-name="GameSession.java" pinned="false" current-in-tab="false">
@@ -177,8 +76,8 @@
                 <file leaf-file-name="GameHelper.java" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="-150">
-                        <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+                      <state relative-caret-position="382">
+                        <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
                         <folding>
                           <element signature="imports" expanded="true" />
                         </folding>
@@ -193,12 +92,12 @@
                         <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
                         <folding>
                           <element signature="imports" expanded="true" />
-                          <element signature="e#1283#1284#0" expanded="true" />
-                          <element signature="e#1315#1316#0" expanded="true" />
-                          <element signature="e#1362#1363#0" expanded="true" />
-                          <element signature="e#1404#1405#0" expanded="true" />
-                          <element signature="e#2610#2611#0" expanded="true" />
-                          <element signature="e#2637#2638#0" expanded="true" />
+                          <element signature="e#1240#1241#0" expanded="true" />
+                          <element signature="e#1272#1273#0" expanded="true" />
+                          <element signature="e#1319#1320#0" expanded="true" />
+                          <element signature="e#1361#1362#0" expanded="true" />
+                          <element signature="e#2567#2568#0" expanded="true" />
+                          <element signature="e#2594#2595#0" expanded="true" />
                         </folding>
                       </state>
                     </provider>
@@ -292,7 +191,7 @@
     <favorites_list name="rpg-pro" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4362416">
+    <splitter split-orientation="horizontal" split-proportion="0.3883495">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
@@ -402,16 +301,16 @@
           <file leaf-file-name="Creature.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
-                  <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1283#1284#0" expanded="true" />
-                    <element signature="e#1315#1316#0" expanded="true" />
-                    <element signature="e#1362#1363#0" expanded="true" />
-                    <element signature="e#1404#1405#0" expanded="true" />
-                    <element signature="e#2610#2611#0" expanded="true" />
-                    <element signature="e#2637#2638#0" expanded="true" />
+                    <element signature="e#1240#1241#0" expanded="true" />
+                    <element signature="e#1272#1273#0" expanded="true" />
+                    <element signature="e#1319#1320#0" expanded="true" />
+                    <element signature="e#1361#1362#0" expanded="true" />
+                    <element signature="e#2567#2568#0" expanded="true" />
+                    <element signature="e#2594#2595#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -532,7 +431,6 @@
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameInterface.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/http/InGameHttp.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameDbEjb.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" />
         <option value="$PROJECT_DIR$/char-service/src/test/java/CreatureTest.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/shared/ejb/CharacterDbEjb.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/exceptions/FailedToJoinGameException.java" />
@@ -540,8 +438,9 @@
         <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/http/RestHttp.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/ejb/CharacterDbEjb.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/Game.java" />
-        <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java" />
         <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/entities/GameResults.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java" />
+        <option value="$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java" />
       </list>
     </option>
   </component>
@@ -1473,7 +1372,7 @@
       <workItem from="1481353118486" duration="14113000" />
       <workItem from="1481369790229" duration="300000" />
       <workItem from="1481370109411" duration="2326000" />
-      <workItem from="1481476074648" duration="48917000" />
+      <workItem from="1481476074648" duration="49373000" />
     </task>
     <task id="LOCAL-00001" summary="updated structure and added game-service">
       <created>1481079939017</created>
@@ -1482,11 +1381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481079939017</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="playable game :)">
+      <created>1481572693594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1481572693594</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170274000" />
+    <option name="totallyTimeSpent" value="170730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
@@ -1505,12 +1411,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39918533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33297643" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2718941" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29336187" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22055675" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1755603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1522,7 +1429,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3329939" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1539,7 +1445,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated structure and added game-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated structure and added game-service" />
+    <MESSAGE value="playable game :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="playable game :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1897,28 +1804,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1319#1320#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2594#2595#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/creatureService/entities/Creature.java">
+    <entry file="file://$PROJECT_DIR$/char-service/src/main/java/gameService/ejb/GameHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="382">
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#2610#2611#0" expanded="true" />
-            <element signature="e#2637#2638#0" expanded="true" />
           </folding>
         </state>
       </provider>

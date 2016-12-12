@@ -46,7 +46,6 @@ public class Creature implements Serializable {
     @Transient
     private int killCount;
 
-    private List<GameResults> gameResults;
 
     public int getKillCount() {
         return killCount;
