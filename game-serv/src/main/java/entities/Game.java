@@ -9,7 +9,7 @@ import java.util.List;
  */
 @Entity
 public class Game {
-    private List<shared.entities.Creature> creatureList;
+    private List<creatureService.entities.Creature> creatureList;
     private TreasureMap map;
 
     public void placeCreature(Integer x, Integer y) {

@@ -2,13 +2,12 @@ package gameService.http;
 
 import gameService.ejb.GameHelper;
 import gameService.ejb.GameSession;
-import org.apache.log4j.MDC;
-import org.apache.log4j.spi.LoggerFactory;
+import gameService.exceptions.MapOutOfBoundsExeption;
 import org.slf4j.Logger;
-import shared.exceptions.FailedToJoinGameException;
-import shared.entities.RestResponse;
+import org.slf4j.LoggerFactory;
+import shared.response.ResponseHelper;
+import shared.response.RestResponse;
 
-import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,8 +15,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
-import java.util.UUID;
+import java.util.Map;
 
 /**
  * Created by kimha on 12/3/16.
@@ -26,66 +26,70 @@ import java.util.UUID;
 public class InGameHttp {
 
 
-
-
-    private static final Logger LOGGER = org.slf4j.LoggerFactory.getLogger(InGameHttp.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(InGameHttp.class);
 
     @Inject
     GameHelper gameHelper;
 
 
+    @Inject
+    RestResponse<Map<String, Object>> respen;
+
+    @Inject
+    ResponseHelper responseHelper;
+
+
     @GET
     @Path("/select")
     @Produces(MediaType.APPLICATION_JSON)
-    public RestResponse<String> chooseCharacter(@Context SecurityContext sc, @QueryParam("creatureId") int creatureId) {
+    public RestResponse<Map<String,Object>> chooseCharacter(@Context SecurityContext sc, @QueryParam("creatureId") int creatureId) {
         String userName = sc.getUserPrincipal().getName();
         LOGGER.info(String.format("Selecting creature for player [%s]", userName));
-        RestResponse<String> restResponse = null;
+
+
         try {
-            restResponse = gameHelper.joinGame(sc, creatureId);
-        } catch (FailedToJoinGameException e) {
-            //TODO: Log here
-            e.printStackTrace();
+            gameHelper.joinGame(userName, creatureId);
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            restie.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
+            responseHelper.putItem("msg", e.getMessage());
         }
-        return restResponse;
+
+        restie.setData(responseHelper.getData());
+        restie.setStatus(responseHelper.getStatus());
+        return restie;
     }
 
 
-//    @RequestScoped
-//    @Inject
-//    String transactionId = UUID.randomUUID().toString();
-
+    @Inject
+    RestResponse<Map<String, Object>> restie;
 
     @Path("/move")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public RestResponse moveCharacter(@Context SecurityContext sc, @QueryParam("direction") String direction) {
-//        MDC.put("transactionId", transactionId);
         String userName = sc.getUserPrincipal().getName();
         LOGGER.info(String.format("Player [%s] trying to move creature", userName));
         RestResponse<GameSession> restResponse = new RestResponse<>();
 
         if (direction == null) {
-            restResponse.setStatus(420);
+            restResponse.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
+            responseHelper.putItem("msg", "direction can't be null");
             return restResponse;
         } else {
             direction = direction.toUpperCase();
         }
 
-        restResponse = gameHelper.requestMove(direction);
-
-
-        return restResponse;
+        try {
+            gameHelper.requestMove(direction);
+        } catch (MapOutOfBoundsExeption mapOutOfBoundsExeption) {
+            LOGGER.warn(mapOutOfBoundsExeption.getMessage());
+            restie.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
+        }
+        restie.setData(responseHelper.getData());
+        restie.setStatus(responseHelper.getStatus());
+        return restie;
     }
 
-
-    @GET
-    @Path("/dosomething")
-    @Produces(MediaType.APPLICATION_JSON)
-    public RestResponse<String> doSomething() {
-        RestResponse<String> restResponse = new RestResponse<>();
-        return restResponse;
-
-    }
 
 }

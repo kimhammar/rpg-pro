@@ -1,7 +1,7 @@
 package http;
 
 import entities.GameStatus;
-import shared.entities.RestResponse;
+import shared.response.RestResponse;
 
 import javax.resource.spi.work.SecurityContext;
 import javax.ws.rs.GET;

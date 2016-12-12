@@ -1,7 +1,7 @@
 package http;
 
-import gameService.ejb.GameEJB;
-import shared.entities.RestResponse;
+import gameService.ejb.Game;
+import shared.response.RestResponse;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -16,7 +16,7 @@ import javax.ws.rs.core.SecurityContext;
 public class RestHttp {
 
     @Inject
-    GameEJB gameEJB;
+    Game game;
 
     @Path("/{move}")
     @Consumes(MediaType.APPLICATION_JSON)

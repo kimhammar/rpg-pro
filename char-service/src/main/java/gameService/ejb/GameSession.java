@@ -1,8 +1,7 @@
 package gameService.ejb;
 
-import shared.entities.Creature;
+import creatureService.entities.Creature;
 
-import javax.ejb.Stateful;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 
@@ -10,14 +9,19 @@ import java.io.Serializable;
  * Created by kimha on 12/7/16.
  */
 @SessionScoped
-public class GameSession implements Serializable{
-
-
-
-
-
+public class GameSession implements Serializable {
 
     private Creature currentCreature;
+
+    private int gamesWon;
+
+    public int getGamesWon() {
+        return gamesWon;
+    }
+
+    public void setGamesWon(int gamesWon) {
+        this.gamesWon = gamesWon;
+    }
 
     public Creature getCurrentCreature() {
         return currentCreature;
@@ -30,13 +34,5 @@ public class GameSession implements Serializable{
     public GameSession() {
     }
 
-    private String lastActionMessage;
 
-    public String getLastActionMessage() {
-        return lastActionMessage;
-    }
-
-    public void setLastActionMessage(String lastActionMessage) {
-        this.lastActionMessage = lastActionMessage;
-    }
 }

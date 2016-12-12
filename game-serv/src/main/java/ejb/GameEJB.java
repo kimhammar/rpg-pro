@@ -1,7 +1,7 @@
 //package ejb;
 //
-//import entities.Creature;
-//import entities.CreaturePosition;
+//import response.Creature;
+//import response.CreaturePosition;
 //
 //import java.util.Random;
 //
@@ -9,7 +9,7 @@
 // * Created by kimha on 12/1/16.
 // */
 ////@Singleton
-//public class GameEJB {
+//public class Game {
 //
 //    private Random random = new Random();
 //    private int width = 4;
@@ -17,7 +17,7 @@
 //    private Creature[][] map;
 //
 //    public static void main(String[] args) {
-//        GameEJB gameEJB = new GameEJB();
+//        Game gameEJB = new Game();
 //        gameEJB.createNewMap();
 //        Creature crat = new Creature();
 //        crat.setName("Crat");

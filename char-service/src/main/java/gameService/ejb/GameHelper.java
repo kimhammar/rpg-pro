@@ -1,17 +1,15 @@
 package gameService.ejb;
 
 import gameService.exceptions.MapOutOfBoundsExeption;
-import shared.ejb.CharacterDbEjb;
-import shared.entities.Creature;
-import shared.exceptions.FailedToJoinGameException;
-import shared.entities.RestResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import creatureService.ejb.CharacterDbEjb;
+import creatureService.entities.Creature;
+import shared.response.ResponseHelper;
+import gameService.exceptions.FailedToJoinGameException;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.SecurityContext;
 
 /**
  * Created by kimha on 12/3/16.
@@ -22,7 +20,7 @@ public class GameHelper {
     private static final Logger LOGGER = LoggerFactory.getLogger(GameHelper.class);
 
     @Inject
-    GameEJB gameEJB;
+    GameInterface game;
 
     @Inject
     CharacterDbEjb characterDbEjb;
@@ -33,85 +31,88 @@ public class GameHelper {
     @Inject
     GameSession gameSession;
 
+    @Inject
+    ResponseHelper responseHelper;
 
-    public RestResponse<String> joinGame(@Context SecurityContext sc, int id) throws FailedToJoinGameException {
-
+    //Tries to add a creature to the game
+    public void joinGame(String userName, int id) throws FailedToJoinGameException {
         //Check player didn't load any character
         if (gameSession.getCurrentCreature() == null) {
             creature = characterDbEjb.getCreature(id);
-            LOGGER.info(String.format("Creature [%s] for player[%s] loaded" , creature.getName(), creature.getOwner()));
+            LOGGER.info(String.format("Creature [%s] for player[%s] loaded", creature.getName(), creature.getOwner()));
             //Check player owns requeted creature
-
             gameSession.setCurrentCreature(creature);
         }
 
 
-        if (!creature.getOwner().equals(sc.getUserPrincipal().getName())) {
+        //Check correct owner
+        if (!creature.getOwner().equals(userName)) {
+            LOGGER.warn(String.format("User [%s] tried to use creature [%s]", userName, creature.getName()));
             throw new FailedToJoinGameException("Owner did not match request");
         }
-
-
-
-
         creature = gameSession.getCurrentCreature();
 
 
         //Check character isn't ingame
-        if (creature.isAlive() == false) {
-            creature.setAlive(true);
-//            characterDbEjb.updateCreature(creature);
-            gameEJB.addCreature(creature);
+        if (creature.isInGame() == false) {
+            creature.setInGame(true);
+            //update in database
+            characterDbEjb.updateCreature(creature);
+            game.addCreature(creature);
             LOGGER.info(String.format("Creature [%s] joined game", creature.getName()));
         } else {
-            LOGGER.warn(String.format("Creature [%s] already in use!",creature.getName()));
+            LOGGER.warn(String.format("Creature [%s] already in use!", creature.getName()));
+            responseHelper.putItem("msg", "You are already in a game!");
+            return;
         }
 
-
-        RestResponse<String> restResponse = new RestResponse<>();
-        restResponse.setStatus(200);
-        restResponse.setData(creature.toString());
-        return restResponse;
+        //Add information
+        responseHelper.putItem("msg", String.format("Your character has entered the arena! Make a move!", creature.getName()));
+        responseHelper.putItem("position", String.format("[X:%d, Y:%d]", creature.getxPos(), creature.getyPos()));
     }
 
 
-
-    public RestResponse<GameSession> requestMove(String direction){
-        RestResponse<GameSession> restResponse = new RestResponse<>();
-        if(gameSession.getCurrentCreature() == null){
-            restResponse.setStatus(420);
-            return restResponse;
+    //Try to move a creature
+    public void requestMove(String direction) throws MapOutOfBoundsExeption {
+        if (gameSession.getCurrentCreature() == null) {
+            responseHelper.putItem("msg", "you must chose a creature");
+            LOGGER.info(String.format("Creature not chosen yet"));
+            responseHelper.setStatus(420);
+            return;
         }
+
         creature = gameSession.getCurrentCreature();
+        if(creature.isInGame() == false){
+            responseHelper.putItem("msg", "You have been killed :( time to join agian!");
+            LOGGER.info(String.format("Slayed creature [%s] tried to join",creature.getName()));
+            responseHelper.setStatus(420);
+            return;
+        }
+
+        //Check correct input
         switch (direction) {
             case "N":
             case "S":
             case "E":
             case "W":
-                try {
                     LOGGER.info(String.format("Trying move creature [%s]", creature.getName()));
-                    String msg = gameEJB.move(creature, direction);
-                    gameSession.setLastActionMessage(msg);
-                } catch (MapOutOfBoundsExeption mapOutOfBoundsExeption) {
-                    restResponse.setStatus(420);
-                    gameSession.setLastActionMessage(mapOutOfBoundsExeption.getMessage());
-                    //Log invalid move player and stacktrace
-                    LOGGER.warn("Map out of bounds");
-                }
-                //If everything ok
-                restResponse.setStatus(200);
+                    game.move(creature, direction);
+                    //Probably should put this catch closer to surface
+
                 break;
             default:
                 //In case of invalid request
-                restResponse.setStatus(400);
+                LOGGER.info(String.format("Invalid move requested from player [%s]", gameSession.getCurrentCreature().getOwner()));
+                responseHelper.putItem("msg", "that's not a valid direction,choose N S W E");
+                responseHelper.setStatus(400);
                 break;
         }
-        restResponse.setData(gameSession);
-        return restResponse;
+        //Check if player still in game, else make available for play
+        //TODO: put this at better place
+        if (!creature.isInGame()) {
+            LOGGER.info(String.format("Updating [inGame] for creature [%s]",creature.getName()));
+            characterDbEjb.updateCreature(creature);
+        }
     }
-
-//    public RestResponse<String> moveCharacter(SecurityContext sc, Direction direction) {
-//        gameEJB.move(sc, direction);
-//
-//    }
 
 }
