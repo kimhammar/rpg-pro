@@ -8,9 +8,7 @@ import shared.response.ResponseHelper;
 import shared.response.RestResponse;
 import shared.response.TestBean;
 
-import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
-import javax.validation.ConstraintViolationException;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -34,7 +32,7 @@ public class RestHttp {
     ResponseHelper responseHelper;
 
     @Inject
-    RestResponse<Map<String, Object>> respen;
+    RestResponse<Map<String, Object>> returnResponse;
 
 
     //Endpoint for retrieving all characters for logged in user
@@ -48,9 +46,9 @@ public class RestHttp {
 
         characterDbEjb.getCreatures(userName);
         LOGGER.info(String.format("Trying to retrieve creatures for player [%s]", userName));
-        respen.setData(responseHelper.getData());
-        respen.setStatus(responseHelper.getStatus());
-        return respen;
+        returnResponse.setData(responseHelper.getData());
+        returnResponse.setStatus(responseHelper.getStatus());
+        return returnResponse;
     }
 
 
@@ -68,11 +66,11 @@ public class RestHttp {
         LOGGER.info(String.format("Trying to add new creature for player [%s]", userName));
 
         if (creature.getName() == null) {
-            respen.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
+            returnResponse.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
             responseHelper.putItem("msg", "Failed to create a new creature, field was null");
-            respen.setData(responseHelper.getData());
+            returnResponse.setData(responseHelper.getData());
             LOGGER.info(String.format("Failed to create creature for user [%s], field was null ", securityContext.getUserPrincipal().getName()));
-            return respen;
+            return returnResponse;
         }
 
         try {
@@ -85,22 +83,24 @@ public class RestHttp {
             responseHelper.putItem("error", "must follow constraints");
         }
 
-        respen.setData(responseHelper.getData());
-        respen.setStatus(responseHelper.getStatus());
-        return respen;
+        returnResponse.setData(responseHelper.getData());
+        returnResponse.setStatus(responseHelper.getStatus());
+        return returnResponse;
     }
 
 
+
+    //Endpoint for deleting
     @DELETE
     @Path("/delete/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public RestResponse<Map<String, Object>> deleteCreature(@Context SecurityContext securityContext, @PathParam("id") int id) {
         String userName = securityContext.getUserPrincipal().getName();
-        LOGGER.info(String.format("SuperAdmin [%s] trying to delete creature with id [%d] ", userName, id));
+        LOGGER.info(String.format("Admin [%s] trying to delete creature with id [%d] ", userName, id));
         characterDbEjb.deleteCreature(id);
-        respen.setData(responseHelper.getData());
-        respen.setStatus(responseHelper.getStatus());
-        return respen;
+        returnResponse.setData(responseHelper.getData());
+        returnResponse.setStatus(responseHelper.getStatus());
+        return returnResponse;
     }
 
 
@@ -125,8 +125,8 @@ public class RestHttp {
     public RestResponse<Map<String,Object>> getBaba(){
         responseHelper.setStatus(12);
         responseHelper.putItem("hall","12");
-        respen.setData(responseHelper.getData());
-        return respen;
+        returnResponse.setData(responseHelper.getData());
+        return returnResponse;
     }
 
 

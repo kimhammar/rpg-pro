@@ -18,7 +18,6 @@ import java.util.List;
  */
 
 @Stateless
-@Startup
 public class CharacterDbEjb {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CharacterDbEjb.class);

@@ -53,12 +53,13 @@ public class Game implements GameInterface {
     }
 
 
+
     //Spawn a bot troll at a specified interval
 //    @Schedule(minute = "*/5", hour = "*")
-    @Schedule(second = "*/30", minute = "*", hour = "*")
+    @Schedule(second = "*/5", minute = "*", hour = "*")
     public void spawnTroll() {
         if (playersLeft >= (height * width) - 1) {
-            LOGGER.info(String.format("Map is full. [%d]/[%d] players in game, can't spawn troll",
+            LOGGER.warn(String.format("Map is full. [%d]/[%d] players in game, can't spawn troll",
                     playersLeft, (width * height)));
             return;
         }
@@ -153,11 +154,11 @@ public class Game implements GameInterface {
         responseHelper.putItem("map", getMap());
     }
 
+    //Creates a visual map
     @Override
     public Map<String, String> getMap() {
         Map<String, String> theMap = new LinkedHashMap<>();
         String mapRow;
-        theMap.put("-1", "_________");
         for (int y = 0; y < map.length; y++) {
             mapRow = "";
             for (int x = 0; x < map[0].length; x++) {
