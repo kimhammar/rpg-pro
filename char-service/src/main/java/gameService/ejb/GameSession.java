@@ -2,13 +2,16 @@ package gameService.ejb;
 
 import creatureService.entities.Creature;
 
+import javax.ejb.Stateful;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 
 /**
  * Created by kimha on 12/7/16.
  */
+//@SessionScoped for demo purposes
 @SessionScoped
+//@Stateful
 public class GameSession implements Serializable {
 
     private Creature currentCreature;

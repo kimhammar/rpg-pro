@@ -69,6 +69,7 @@ public class GameHelper {
         //Add information
         responseHelper.putItem("msg", String.format("Your character [%s] has entered the arena! Make a move!", creature.getName()));
         responseHelper.putItem("position", String.format("[X:%d, Y:%d]", creature.getxPos(), creature.getyPos()));
+        responseHelper.putItem("map", game.getMap());
     }
 
 

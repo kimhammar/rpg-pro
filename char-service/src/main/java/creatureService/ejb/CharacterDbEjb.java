@@ -41,20 +41,18 @@ public class CharacterDbEjb {
 
     //Load one specific creature for user
     public Creature getCreature(int id) {
-        Creature creature = (Creature)em.createNamedQuery("Creature.getOne").setParameter("id", id).getSingleResult();
+        Creature creature = (Creature) em.createNamedQuery("Creature.getOne").setParameter("id", id).getSingleResult();
         return creature;
     }
 
 
     //Method used for storing a new creature for the user
-    public void storeCreature(String user, String creatureName) {
-        Creature creature = new Creature();
-        creature.setName(creatureName);
-        creature.setOwner(user);
+    public void storeCreature(Creature creature) {
+
         em.persist(creature);
         responseHelper.setStatus(Response.Status.CREATED.getStatusCode());
-        responseHelper.putItem("msg", String.format("Your creature [%s] was persisted", creatureName));
-        LOGGER.info(String.format("New creature [%s] persisted for player [%s]", creatureName, user));
+        responseHelper.putItem("msg", String.format("Your creature [%s] was persisted", creature.getName()));
+        LOGGER.info(String.format("New creature [%s] persisted for player [%s]", creature.getName(), creature.getOwner()));
     }
 
 

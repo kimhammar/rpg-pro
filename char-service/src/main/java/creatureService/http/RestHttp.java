@@ -1,11 +1,14 @@
 package creatureService.http;
 
+import creatureService.entities.Creature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import creatureService.ejb.CharacterDbEjb;
 import shared.response.ResponseHelper;
 import shared.response.RestResponse;
+import shared.response.TestBean;
 
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.validation.ConstraintViolationException;
 import javax.ws.rs.*;
@@ -53,14 +56,18 @@ public class RestHttp {
 
     //Should be a post to path("/"), get used for easier testing
     //TODO: change to POST
-    @GET
+    @POST
     @Path("/store")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public RestResponse<Map<String, Object>> createCreature(@Context SecurityContext securityContext, @QueryParam("creatureName") String creatureName) {
+    public RestResponse<Map<String, Object>> createCreature(@Context SecurityContext securityContext, Creature creature) {
         String userName = securityContext.getUserPrincipal().getName();
+        LOGGER.info(String.format("Trying to add new creature for player [%s]", creature.getName()));
+
+
         LOGGER.info(String.format("Trying to add new creature for player [%s]", userName));
 
-        if (creatureName == null) {
+        if (creature.getName() == null) {
             respen.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
             responseHelper.putItem("msg", "Failed to create a new creature, field was null");
             respen.setData(responseHelper.getData());
@@ -69,9 +76,10 @@ public class RestHttp {
         }
 
         try {
-            characterDbEjb.storeCreature(userName, creatureName);
+            creature.setOwner(userName);
+            characterDbEjb.storeCreature(creature);
         } catch (Exception e) {
-            LOGGER.warn(String.format("User [%s] tried to store creature with invalid name [%s]", userName, creatureName));
+            LOGGER.warn(String.format("User [%s] tried to store creature with invalid name [%s]", userName, creature.getName()));
             responseHelper.setStatus(Response.Status.BAD_REQUEST.getStatusCode());
             responseHelper.putItem("msg", "Validation failed");
             responseHelper.putItem("error", "must follow constraints");
@@ -96,8 +104,55 @@ public class RestHttp {
     }
 
 
-    //https://issues.jboss.org/browse/RESTEASY-1238
-    //TODO: add PUT and DELETE
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    @GET
+    @Path("/abab")
+    @Produces(MediaType.APPLICATION_JSON)
+    public ResponseHelper getAbAb(){
+        responseHelper.setStatus(12);
+        responseHelper.putItem("hall","12");
+        return responseHelper;
+    }
+
+    @GET
+    @Path("/baba")
+    @Produces(MediaType.APPLICATION_JSON)
+    public RestResponse<Map<String,Object>> getBaba(){
+        responseHelper.setStatus(12);
+        responseHelper.putItem("hall","12");
+        respen.setData(responseHelper.getData());
+        return respen;
+    }
+
+
+
+
+    @Inject
+    TestBean testBean;
+
+    @GET
+    @Path("/caca")
+    @Produces(MediaType.APPLICATION_JSON)
+    public TestBean getCaca(){
+        testBean.setStatus(12);
+        testBean.putItem("hall","12");
+        return testBean;
+    }
+//    https://issues.jboss.org/browse/RESTEASY-1238
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
 
 
 }

@@ -20,7 +20,7 @@ import static javax.ejb.ConcurrencyManagementType.BEAN;
 @ConcurrencyManagement(BEAN)
 @Singleton
 @Startup
-public class Game implements GameInterface{
+public class Game implements GameInterface {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Game.class);
     private Random random = new Random();
@@ -54,10 +54,10 @@ public class Game implements GameInterface{
 
 
     //Spawn a bot troll at a specified interval
-    @Schedule( minute = "*/5", hour = "*")
-//    @Schedule(second = "*", minute = "*/5", hour = "*")
+//    @Schedule(minute = "*/5", hour = "*")
+    @Schedule(second = "*/30", minute = "*", hour = "*")
     public void spawnTroll() {
-        if(playersLeft >= (height * width)-1){
+        if (playersLeft >= (height * width) - 1) {
             LOGGER.info(String.format("Map is full. [%d]/[%d] players in game, can't spawn troll",
                     playersLeft, (width * height)));
             return;
@@ -109,8 +109,9 @@ public class Game implements GameInterface{
         if (predictedX < 0 || predictedX > width - 1 || predictedY < 0 || predictedY > height - 1) {
             eventList.add(String.format("You tried to move outside the map, cannot move [%s]", direction));
             responseHelper.putItem("events", eventList);
+            responseHelper.putItem("map", getMap());
             throw new MapOutOfBoundsExeption(String.format("Creature [%s] tried to move out of map boundaries Y: %d X: %d"
-                    ,creature.getName(), predictedY, predictedX));
+                    , creature.getName(), predictedY, predictedX));
         }
 
         //Check if stabbed someone
@@ -149,6 +150,24 @@ public class Game implements GameInterface{
         }
         responseHelper.putItem("kills", creature.getKillCount());
         responseHelper.putItem("events", eventList);
+        responseHelper.putItem("map", getMap());
+    }
+
+    @Override
+    public Map<String, String> getMap() {
+        Map<String, String> theMap = new LinkedHashMap<>();
+        String mapRow;
+        theMap.put("-1", "_________");
+        for (int y = 0; y < map.length; y++) {
+            mapRow = "";
+            for (int x = 0; x < map[0].length; x++) {
+                mapRow += map[y][x] == null ? " " :
+                        map[y][x] == gameSession.getCurrentCreature() ? "O" : "X";
+            }
+            theMap.put(y + "", mapRow);
+        }
+        theMap.put("'", "''''''''''''''");
+        return theMap;
     }
 
 

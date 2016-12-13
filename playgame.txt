@@ -1,0 +1,19 @@
+
+//Store
+POST
+Consumes JSON
+http://127.0.0.1:8080/rpgpro/character/store
+{"name":"Conny"}
+
+//Get characters
+GET
+http://localhost:8080/rpgpro/character/
+
+//Select character to join game
+GET --> should be PUT
+http://localhost:8080/rpgpro/play/select/1 <-- creature id
+
+//Move chosen direction
+GET
+http://localhost:8080/rpgpro/play/move
+Queryparam -> direction -> N/S/W/E

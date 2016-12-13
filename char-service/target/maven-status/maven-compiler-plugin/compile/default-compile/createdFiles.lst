@@ -7,6 +7,7 @@ shared/constants/Cst.class
 gameService/ejb/GameSession.class
 gameService/ejb/GameDbEjb.class
 gameService/exceptions/MapOutOfBoundsExeption.class
+shared/response/TestBean.class
 gameService/ejb/Game.class
 creatureService/exeption/NoCreatureWithSuchIdException.class
 creatureService/http/RestHttp.class

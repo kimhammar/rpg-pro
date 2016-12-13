@@ -9,10 +9,7 @@ import shared.response.ResponseHelper;
 import shared.response.RestResponse;
 
 import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -40,9 +37,9 @@ public class InGameHttp {
 
 
     @GET
-    @Path("/select")
+    @Path("/select/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public RestResponse<Map<String,Object>> chooseCharacter(@Context SecurityContext sc, @QueryParam("creatureId") int creatureId) {
+    public RestResponse<Map<String,Object>> chooseCharacter(@Context SecurityContext sc, @PathParam("id") int creatureId) {
         String userName = sc.getUserPrincipal().getName();
         LOGGER.info(String.format("Selecting creature for player [%s]", userName));
 

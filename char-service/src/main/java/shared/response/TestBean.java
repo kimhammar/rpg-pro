@@ -1,23 +1,19 @@
 package shared.response;
 
-import javax.enterprise.context.RequestScoped;
-import java.io.Serializable;
+import javax.ejb.Stateless;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by kimha on 11/25/16.
+ * Created by kimha on 12/13/16.
  */
-
-
-//If stateless will be reused and send privous data to user
-@RequestScoped
-public class ResponseHelper implements Serializable {
+@Stateless
+public class TestBean {
     private Map<String, Object> data = new HashMap<>();
     private int status = 200;
 
 
-    public ResponseHelper() {
+    public TestBean() {
     }
 
     public int getStatus() {
@@ -39,5 +35,4 @@ public class ResponseHelper implements Serializable {
     public void putItem(String key, Object object) {
         data.put(key, object);
     }
-
 }

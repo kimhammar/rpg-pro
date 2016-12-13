@@ -64,7 +64,7 @@ public class CreatureTest {
                         "Authorization", "Basic " +
                                 java.util.Base64.getEncoder().
                                         encodeToString("root:root".getBytes()))
-                .get();
+                .post(null);
 
         res = response.readEntity(RestResponse.class);
 
@@ -73,7 +73,7 @@ public class CreatureTest {
     }
 
 
-    @Ignore
+
     @Test
     public void testDeleteCreature_01() {
         Response response = ClientBuilder.newClient()
@@ -112,10 +112,36 @@ public class CreatureTest {
                 .request(MediaType.APPLICATION_JSON).header(
                         "Authorization", "Basic " +
                                 java.util.Base64.getEncoder().
-                                        encodeToString("roots:root".getBytes()))
+                                        encodeToString("wrong:wrong".getBytes()))
                 .delete();
 
-        assertEquals("Test access forbidden", 401, response.getStatus());
+
+        assertEquals("Test not authenticated", 401, response.getStatus());
+    }
+
+    @Test
+    public void testPermissionForPlayerDeniedWhenDelete() {
+        Response response = ClientBuilder.newClient()
+                .target("http://127.0.0.1:8080/rpgpro/character/delete/1")
+                .request(MediaType.APPLICATION_JSON).header(
+                        "Authorization", "Basic " +
+                                java.util.Base64.getEncoder().
+                                        encodeToString("super:super".getBytes()))
+                .delete();
+
+        assertEquals("Test access forbidden", 403, response.getStatus());
+    }
+
+    @Test
+    public void testPermissionAllowedForPlayerToRead() {
+        Response response = ClientBuilder.newClient()
+                .target("http://127.0.0.1:8080/rpgpro/character/")
+                .request(MediaType.APPLICATION_JSON).header(
+                        "Authorization", "Basic " +
+                                java.util.Base64.getEncoder().
+                                        encodeToString("super:super".getBytes()))
+                .get();
+        assertEquals("Test access allowed ", 200, response.getStatus());
     }
 
 }
